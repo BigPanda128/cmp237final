@@ -1,8 +1,14 @@
-<button>Click me</button>
-<p>No handler here.</p>
 <script>
-  var button = document.querySelector("button");
-  button.addEventListener("click", function() {
-    console.log("Button clicked.");
-  });
-</script>
+function saySomething(word){//this is a js function to detirmine what to say
+	if(word == 'hello'){
+		console.log("Hello User");
+	}else{
+		console.log("Please Die User");
+	}
+}
+</script><!--this has three buttons and the middle one is rubbish as intended-->
+<button onclick="saySomething('goodbye');">goodbye</button>
+<button>Click me</button>
+<button onclick="saySomething('hello');">hello</button>
+
+<p>No handler here.</p>
